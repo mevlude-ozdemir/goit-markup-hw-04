@@ -82,11 +82,13 @@ img {
 
 .nav-link:hover {
   color: #404bbf;
+  border-bottom: 2px solid;
+  border-radius: 2px;
 }
-.navigation #studio:focus {
-  color: #404bbf;
-  text-decoration: underline;
-}
+/* .nav-link::after {
+  
+} */
+
 .contacts {
   font-style: normal;
 }
@@ -102,6 +104,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .contacts-link:hover {
@@ -155,6 +159,8 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px #00000026;
   margin: 0 auto;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
@@ -288,7 +294,6 @@ h3 {
   height: 16px;
 }
 .section-four {
-  /* height: 1350px; */
   padding: 120px 0;
 }
 .four-container {
@@ -304,11 +309,8 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  /* width: 1200px; */
-  /* margin-top: 72px; */
-  /* row-gap: 48px; */
 }
-.sec-four-list li {
+.sec-four-list-item {
   width: calc((100% - 48px) / 3);
 }
 .sec-four-list img {
@@ -332,6 +334,14 @@ p {
   border-top: none;
   margin-bottom: 8px;
   padding: 32px 16px;
+  background-color: rgba(255, 255, 255, 1);
+  transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.app-card:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .footer {
@@ -387,6 +397,12 @@ p {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-links-container:hover,
+:focus {
+  background: rgba(49, 208, 170, 1);
 }
 .container-footer {
   display: flex;
